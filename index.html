@@ -4,16 +4,25 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 <body>
+  <nav class="nav-bar">
+    <h2>Search and Rescue</h2>
+  </nav>
   <div class="container">
     <div class="search-user">
-      <input type="text" class="search">
+      <input type="text" class="search" placeholder="search username">
  
     </div>
+    <h3>Profile</h3>
     <div class="profile"></div>
-    <div class="repo"></div>
+    <div class="repo-container">
+      <h3>Repositories</h3>
+      <div class="repo"></div>
+    </div>
+    
   </div>
   <script src="githubUser.js"></script>
   <script src="client.js"></script>

@@ -6,21 +6,25 @@ class Client {
   }
   showProfile(user){
     const output = 
-    `<div class = "profile-containe">
-    
-      <div class = "name">
-        <p> Name: ${user.name}</p>
-      </div>
-      <div class = "email">
-        <p> email: ${user.email}</p>
-      </div>
-      <div class = "following">
-        <p> following: ${user.following}</p>
-      </div>
-      <div class = "followers">
-        <p> following: ${user.followers}</p>
+    `<div class = "profile-container">
+      <div class ="img-box"> 
+        <img src ="${user.avatar_url}">
       </div>
     
+      <div class = "profile-info"> 
+    
+          <p> Name: ${user.name}</p>
+        
+        
+          <p> email: ${user.email}</p>
+        
+        
+          <p> following: ${user.following}</p>
+        
+        
+          <p> followers: ${user.followers}</p>
+
+      
       
     </div>`
 
@@ -29,12 +33,8 @@ class Client {
   showRepos(repos){
     let output = '';
 
-    Jrepos.forEach(repo => {
-      output += `<div class = "repo-container">
-      <div class = "name">
-        <p> Name: ${repo.name}</p>
-      </div>  
-    </div>`
+    repos.forEach(repo => {
+      output += `<p> ${repo.name}</p>`
     });   
    
 
