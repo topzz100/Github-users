@@ -43,4 +43,7 @@ class Client {
   clearProfile(){
     profile.innerHTML = '';
   }
+  clearRepos(){
+    repositories.innerHTML = '';
+  }
 }

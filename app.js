@@ -12,6 +12,7 @@ gitHub.getUser(content).then(data => {
     
   }else{
     client.clearProfile()
+    client.clearRepos()
   }
 } );
 
