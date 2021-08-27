@@ -8,7 +8,7 @@ gitHub.getUser(content).then(data => {
   
   if(data.profile.message !== "Not Found"){
     client.showProfile(data.profile);
-    client.showRepos(data.repos)
+    client.showRepos(content, data.repos)
     
   }else{
     client.clearProfile()

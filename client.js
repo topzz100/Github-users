@@ -30,11 +30,11 @@ class Client {
 
     profile.innerHTML = output;
   }
-  showRepos(repos){
+  showRepos(user, repos){
     let output = '';
 
     repos.forEach(repo => {
-      output += `<p> ${repo.name}</p>`
+      output += `<p><a href = "https://github.com/${user}/${repo.name}"> ${repo.name}</a></p>`
     });   
    
 
